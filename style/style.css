@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color:   #ac9eb8;
+    text-align: center;
+    padding: 10px;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    position: sticky;
+    top:20px;
+    padding: 10px;
+}
+body{
+    background-color:   #e2d9cb;
+    font-family: 'Lato', sans-serif;
+}
+footer{
+    background-color:   #ac9eb8;
+}
+
+.taylorbackground{
+    text-align: center;
+}
+
+.parrafosindex{
+    margin-top: 20px;
+}
+
+footer{
+    margin-top: 40px;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.album_covers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
+}
+
+.album_covers div{
+    padding: 40px;
+}
+
+.album_covers h2{
+    text-align: center;
+}
+.mosaico{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content:space-evenly
+}
+
+.mosaico img{
+    margin-top: 20px;
+    padding: 20px;
+}
