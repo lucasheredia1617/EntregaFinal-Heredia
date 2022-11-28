@@ -61,15 +61,6 @@ footer {
 .card {
     background-color: #e2d9cb;
 }
-
-.galeria-grid {
-    grid-area: galeria-grid;
-}
-
-footer {
-    grid-area: footer;
-}
-
 .debut {
     grid-area: debut;
 }
@@ -109,17 +100,6 @@ footer {
 .midnights {
     grid-area: midnights;
 }
-
-.galeria-grid {
-    margin-bottom: 1.5em;
-    gap: 20px;
-    display: grid;
-    grid-template-areas:
-        "galeria-grid"
-        "footer"
-    ;
-}
-
 .grid-img {
     display: grid;
     grid-template-areas:
