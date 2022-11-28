@@ -1,78 +1,192 @@
-*{
+/*mobile first 0px-500px*/
+* {
     margin: 0%;
     padding: 0%;
 }
-ul{
-    list-style-type: none;
-}
-li{
-    display: inline-block;
-}
-a{
-    text-decoration: none;
+
+header {
+    background-color: #ac9eb8;
+    text-align: center;
+    padding: 15px;
 }
 
-header{
-    background-color:   #ac9eb8;
-    text-align: center;
-    padding: 10px;
-}
-nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    position: sticky;
-    top:20px;
-    padding: 10px;
-}
-body{
-    background-color:   #e2d9cb;
+body {
+    background-color: #e2d9cb;
     font-family: 'Lato', sans-serif;
 }
-footer{
-    background-color:   #ac9eb8;
+
+footer {
+    background-color: #ac9eb8;
 }
 
+.bgnav {
+    background-color: #ac9eb8;
+}
+
+/* INDEX */
 .taylorbackground{
-    text-align: center;
-}
-
-.parrafosindex{
-    margin-top: 20px;
-}
-
-footer{
-    margin-top: 40px;
-}
-.redes-sociales{
     display: flex;
-    flex-direction: row-reverse;
-}
-.album_covers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around
+    justify-content: center;
+    margin: 20px;
 }
 
-.album_covers div{
-    padding: 40px;
+/* TOUR */
+
+.espaciado {
+    margin-top: 60px;
 }
 
-.album_covers h2{
-    text-align: center;
-}
-.mosaico{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content:space-evenly
+.tour img {
+    width: 400px;
+    height: 550px;
 }
 
-.mosaico img{
-    margin-top: 20px;
-    padding: 20px;
+.carousel {
+    margin: 20px;
+}
+
+/*DISCOGRAFIA*/
+.acercar {
+    overflow: hidden;
+}
+
+.acercar img {
+    transition: all 5s;
+}
+
+.acercar:hover img {
+    transform: scale(1.5);
+}
+
+.card {
+    background-color: #e2d9cb;
+}
+
+.galeria-grid {
+    grid-area: galeria-grid;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.debut {
+    grid-area: debut;
+}
+
+.speaknow {
+    grid-area: speaknow;
+}
+
+.milnueveochentaynueve {
+    grid-area: milnueveochentaynueve;
+}
+
+.reputation {
+    grid-area: reputation;
+}
+
+.lover {
+    grid-area: lover;
+}
+
+.folklore {
+    grid-area: folklore;
+}
+
+.evermore {
+    grid-area: evermore;
+}
+
+.fearless {
+    grid-area: fearless;
+}
+
+.red {
+    grid-area: albumred;
+}
+
+.midnights {
+    grid-area: midnights;
+}
+
+.galeria-grid {
+    margin-bottom: 1.5em;
+    gap: 20px;
+    display: grid;
+    grid-template-areas:
+        "galeria-grid"
+        "footer"
+    ;
+}
+
+.grid-img {
+    display: grid;
+    grid-template-areas:
+        "debut"
+        "speaknow"
+        "milnueveochentaynueve"
+        "reputation"
+        "lover"
+        "folklore"
+        "evermore"
+        "fearless"
+        "albumred"
+        "midnights";
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+/* GALERIA */
+.mosaico {
+    padding: 10px;
+}
+
+.mosaico img {
+    margin: 10px;
+}
+
+/* MEDIA QUERIES */
+/* 500 px en ADELANTE */
+@media(min-width:500px) {
+    .grid-img {
+        display: grid;
+        grid-template-areas:
+            "debut                  speaknow"
+            "milnueveochentaynueve  reputation"
+            "lover                  folklore"
+            "evermore               fearless"
+            "albumred               midnights";
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+/*768 px en ADELANTE  */
+@media(min-width:768px) {
+    .grid-img {
+        display: grid;
+        grid-template-areas:
+            "debut                  speaknow"
+            "milnueveochentaynueve  reputation"
+            "lover                  folklore"
+            "evermore               fearless"
+            "albumred               midnights";
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+/* 1024 px en ADELANTE */
+@media(min-width:1024px) {
+    .grid-img {
+        display: grid;
+        grid-template-areas:
+            "debut     speaknow  milnueveochentaynueve  reputation"
+            "lover     folklore  evermore               fearless"
+            "albumred  midnights null                   null";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        padding: 1.5em;
+    }
 }
