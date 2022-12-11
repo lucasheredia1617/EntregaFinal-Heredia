@@ -1,46 +1,7 @@
-/*mobile first 0px-500px*/
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
-header {
-  background-color: #ac9eb8;
-  text-align: center;
-  padding: 15px;
-}
-
-body {
-  background-color: #e2d9cb;
-  font-family: "Lato", sans-serif;
-}
-
-footer {
-  background-color: #ac9eb8;
-}
-
-.bgnav {
-  background-color: #ac9eb8;
-}
-
 /* INDEX */
 .taylorbackground {
   display: flex;
   justify-content: center;
-  margin: 20px;
-}
-
-/* TOUR */
-.espaciado {
-  margin-top: 60px;
-}
-
-.tour img {
-  width: 400px;
-  height: 550px;
-}
-
-.carousel {
   margin: 20px;
 }
 
@@ -113,6 +74,45 @@ footer {
 /* GALERIA */
 .mosaico img {
   margin: 10px;
+}
+
+/* TOUR */
+.espaciado {
+  margin-top: 60px;
+}
+
+.tour img {
+  width: 400px;
+  height: 550px;
+}
+
+.carousel {
+  margin: 20px;
+}
+
+/*mobile first 0px-500px*/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  background-color: #ac9eb8;
+  text-align: center;
+  padding: 15px;
+}
+
+body {
+  background-color: #e2d9cb;
+  font-family: "Lato", sans-serif;
+}
+
+footer {
+  background-color: #ac9eb8;
+}
+
+.bgnav {
+  background-color: #ac9eb8;
 }
 
 /* MEDIA QUERIES */
