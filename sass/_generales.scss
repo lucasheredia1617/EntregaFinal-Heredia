@@ -2,23 +2,24 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #ac9eb8;
+    background-color: $colorfondo;
     text-align: center;
     padding: 15px;
 }
 
 body {
-    background-color: #e2d9cb;
+    background-color: $colorbody;
     font-family: 'Lato', sans-serif;
 }
 
 footer {
-    background-color: #ac9eb8;
+    background-color: $colorfondo;
 }
 
 .bgnav {
-    background-color: #ac9eb8;
+    background-color: $colorfondo;
 }

@@ -5,46 +5,5 @@
 @import "galeria";
 @import "tour";
 @import "generales";
+@import "premios";
 
-/* MEDIA QUERIES */
-/* 500 px en ADELANTE */
-@media(min-width:500px) {
-    .grid-img {
-        display: grid;
-        grid-template-areas:
-            "debut                  speaknow"
-            "milnueveochentaynueve  reputation"
-            "lover                  folklore"
-            "evermore               fearless"
-            "albumred               midnights";
-        grid-template-columns: 2fr 2fr;
-    }
-}
-
-/*768 px en ADELANTE  */
-@media(min-width:768px) {
-    .grid-img {
-        display: grid;
-        grid-template-areas:
-            "debut                  speaknow"
-            "milnueveochentaynueve  reputation"
-            "lover                  folklore"
-            "evermore               fearless"
-            "albumred               midnights";
-        grid-template-columns: 2fr 2fr;
-    }
-}
-
-/* 1024 px en ADELANTE */
-@media(min-width:1024px) {
-    .grid-img {
-        display: grid;
-        grid-template-areas:
-            "debut     speaknow  milnueveochentaynueve  reputation"
-            "lover     folklore  evermore               fearless"
-            "albumred  midnights null                   null";
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 0;
-        padding: 1.5em;
-    }
-}

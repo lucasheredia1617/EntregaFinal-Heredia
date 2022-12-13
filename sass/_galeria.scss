@@ -1,7 +1,14 @@
 /* GALERIA */
 
-.mosaico{
+@mixin tamaños($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.mosaico {
     img {
         margin: 10px;
+        @include tamaños(450px, 550px)
     }
 }
+

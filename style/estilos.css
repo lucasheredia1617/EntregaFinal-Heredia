@@ -1,8 +1,54 @@
 /* INDEX */
-.taylorbackground {
-  display: flex;
-  justify-content: center;
+.index-contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1fr;
+  gap: 30px;
+  grid-template-areas: "fotobackground" "frase" "parrafosindex";
+}
+
+@media (min-width: 500px) {
+  .index-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    gap: 30px;
+    grid-template-areas: "fotobackground" "frase" "parrafosindex";
+  }
+}
+@media (min-width: 768px) {
+  .index-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    gap: 30px;
+    grid-template-areas: "fotobackground" "frase" "parrafosindex";
+  }
+}
+@media (min-width: 1024px) {
+  .index-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    gap: 30px;
+    grid-template-areas: "fotobackground" "frase" "parrafosindex";
+  }
+}
+.fotobackground {
+  padding: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  grid-area: fotobackground;
+}
+
+.frase {
+  text-align: center;
   margin: 20px;
+  grid-area: frase;
+}
+
+.parrafosindex {
+  grid-area: parrafosindex;
 }
 
 /*DISCOGRAFIA*/
@@ -18,8 +64,9 @@
   transform: scale(1.5);
 }
 
-.card {
+.bodycard, .card {
   background-color: #e2d9cb;
+  font-family: "Lato", sans-serif;
 }
 
 .debut {
@@ -71,52 +118,6 @@
   justify-items: center;
 }
 
-/* GALERIA */
-.mosaico img {
-  margin: 10px;
-}
-
-/* TOUR */
-.espaciado {
-  margin-top: 60px;
-}
-
-.tour img {
-  width: 400px;
-  height: 550px;
-}
-
-.carousel {
-  margin: 20px;
-}
-
-/*mobile first 0px-500px*/
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
-header {
-  background-color: #ac9eb8;
-  text-align: center;
-  padding: 15px;
-}
-
-body {
-  background-color: #e2d9cb;
-  font-family: "Lato", sans-serif;
-}
-
-footer {
-  background-color: #ac9eb8;
-}
-
-.bgnav {
-  background-color: #ac9eb8;
-}
-
-/* MEDIA QUERIES */
-/* 500 px en ADELANTE */
 @media (min-width: 500px) {
   .grid-img {
     display: grid;
@@ -141,4 +142,119 @@ footer {
     margin: 0;
     padding: 1.5em;
   }
+}
+/* GALERIA */
+.mosaico img {
+  margin: 10px;
+  width: 450px;
+  height: 550px;
+}
+
+/* TOUR */
+.espaciado {
+  margin-top: 60px;
+}
+
+.tour img {
+  width: 400px;
+  height: 550px;
+}
+
+.carousel {
+  margin: 20px;
+}
+
+/*mobile first 0px-500px*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ac9eb8;
+  text-align: center;
+  padding: 15px;
+}
+
+body {
+  background-color: #e2d9cb;
+  font-family: "Lato", sans-serif;
+}
+
+footer {
+  background-color: #ac9eb8;
+}
+
+.bgnav {
+  background-color: #ac9eb8;
+}
+
+/*PREMIOS*/
+.premios-contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1fr;
+  gap: 30px;
+  grid-template-areas: "fotopremio2021" "premio2021" "fotopremio2020" "premio2020" "fotopremio2019" "premio2019";
+}
+
+@media (min-width: 500px) {
+  .premios-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    gap: 40px;
+    grid-template-areas: "fotopremio2021" "premio2021" "fotopremio2020" "premio2020" "fotopremio2019" "premio2019";
+  }
+}
+@media (min-width: 768px) {
+  .premios-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    gap: 40px;
+    grid-template-areas: "fotopremio2021  premio2021" "fotopremio2020  premio2020" "fotopremio2019  premio2019";
+  }
+}
+@media (min-width: 1024px) {
+  .premios-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    gap: 40px;
+    grid-template-areas: "fotopremio2021  premio2021" "fotopremio2020  premio2020" "fotopremio2019  premio2019";
+  }
+}
+.fotopremio2021 {
+  grid-area: fotopremio2021;
+  width: 500px;
+  height: 400px;
+  margin: 40px;
+}
+
+.premio2021 {
+  grid-area: premio2021;
+}
+
+.fotopremio2020 {
+  grid-area: fotopremio2020;
+  width: 500px;
+  height: 500px;
+  margin: 40px;
+}
+
+.premio2020 {
+  grid-area: premio2020;
+}
+
+.fotopremio2019 {
+  grid-area: fotopremio2019;
+  width: 500px;
+  height: 700px;
+  margin: 40px;
+}
+
+.premio2019 {
+  grid-area: premio2019;
 }/*# sourceMappingURL=estilos.css.map */

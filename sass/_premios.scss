@@ -1,0 +1,89 @@
+/*PREMIOS*/
+.premios-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    gap: 30px;
+    grid-template-areas:
+        "fotopremio2021"
+        "premio2021"
+        "fotopremio2020"
+        "premio2020"
+        "fotopremio2019"
+        "premio2019";
+}
+
+@media(min-width:500px) {
+    .premios-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr;
+        gap: 40px;
+        grid-template-areas:
+            "fotopremio2021"
+            "premio2021"
+            "fotopremio2020"
+            "premio2020"
+            "fotopremio2019"
+            "premio2019";
+    }
+}
+
+@media(min-width:768px) {
+    .premios-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr;
+        gap: 40px;
+        grid-template-areas:
+            "fotopremio2021  premio2021"
+            "fotopremio2020  premio2020"
+            "fotopremio2019  premio2019";
+    }
+}
+
+@media(min-width:1024px) {
+    .premios-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr;
+        gap: 40px;
+        grid-template-areas:
+            "fotopremio2021  premio2021"
+            "fotopremio2020  premio2020"
+            "fotopremio2019  premio2019";
+    }
+}
+
+.fotopremio2021 {
+    grid-area: fotopremio2021;
+    width: 500px;
+    height: 400px;
+    margin: 40px;
+}
+
+.premio2021 {
+    grid-area: premio2021;
+}
+
+.fotopremio2020 {
+    grid-area: fotopremio2020;
+    width: 500px;
+    height: 500px;
+    margin: 40px;
+}
+
+.premio2020 {
+    grid-area: premio2020;
+}
+
+.fotopremio2019 {
+    grid-area: fotopremio2019;
+    width: 500px;
+    height: 700px;
+    margin: 40px;
+}
+
+.premio2019 {
+    grid-area: premio2019;
+}
