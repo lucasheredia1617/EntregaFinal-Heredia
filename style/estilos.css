@@ -3,8 +3,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-row: 1fr;
-  gap: 30px;
-  grid-template-areas: "fotobackground" "frase" "parrafosindex";
+  gap: 10px;
+  grid-template-areas: "container-background" "frase" "parrafosindex";
 }
 
 @media (min-width: 500px) {
@@ -12,8 +12,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row: 1fr;
-    gap: 30px;
-    grid-template-areas: "fotobackground" "frase" "parrafosindex";
+    gap: 10px;
+    grid-template-areas: "container-background" "frase" "parrafosindex";
   }
 }
 @media (min-width: 768px) {
@@ -21,8 +21,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row: 1fr;
-    gap: 30px;
-    grid-template-areas: "fotobackground" "frase" "parrafosindex";
+    gap: 10px;
+    grid-template-areas: "container-background" "frase" "parrafosindex";
   }
 }
 @media (min-width: 1024px) {
@@ -30,25 +30,40 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row: 1fr;
-    gap: 30px;
-    grid-template-areas: "fotobackground" "frase" "parrafosindex";
+    gap: 10px;
+    grid-template-areas: "container-background" "frase" "parrafosindex";
   }
 }
+.container-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: container-background;
+}
+
 .fotobackground {
-  padding: 50px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  grid-area: fotobackground;
+  padding: 30px;
+  border-radius: 5em;
+}
+
+.container-frase {
+  display: flex;
+  justify-content: center;
 }
 
 .frase {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin: 20px;
   grid-area: frase;
+  border: 2px solid black;
+  padding: 10px;
+  width: 650px;
 }
 
 .parrafosindex {
   grid-area: parrafosindex;
+  padding: 15px;
 }
 
 /*DISCOGRAFIA*/
