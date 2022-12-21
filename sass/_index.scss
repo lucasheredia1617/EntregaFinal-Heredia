@@ -1,81 +1,69 @@
 /* INDEX */
-.index-contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row: 1fr;
-    gap: 10px;
-    grid-template-areas:
-        "container-background"
-        "frase"
-        "parrafosindex";
-}
 
-@media(min-width:500px) {
-    .index-contenedor {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row: 1fr;
-        gap: 10px;
-        grid-template-areas:
-            "container-background"
-            "frase"
-            "parrafosindex";
-    }
-}
-
-@media(min-width:768px) {
-    .index-contenedor {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row: 1fr;
-        gap: 10px;
-        grid-template-areas:
-            "container-background"
-            "frase"
-            "parrafosindex";
-    }
-}
-
-@media(min-width:1024px) {
-    .index-contenedor {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row: 1fr;
-        gap: 10px;
-        grid-template-areas:
-            "container-background"
-            "frase"
-            "parrafosindex";
-    }
-}
-
-.container-background{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: container-background;
-}
 .fotobackground {
     padding: 30px;
     border-radius: 5em;
 }
 
-.container-frase{
+.containerfrase {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
+    grid-area: frase;
 }
 
 .frase {
     display: flex;
     justify-content: center;
     text-align: center;
-    grid-area: frase;
-    border:2px solid black;
+    border: 2px solid black;
     padding: 10px;
-    width: 650px;
 }
 
 .parrafosindex {
     grid-area: parrafosindex;
     padding: 15px;
+}
+
+.index-container {
+    display: grid;
+    margin-bottom: 1.5em;
+    gap: 20px;
+    grid-template-areas:
+        "frase"
+        "parrafosindex";
+}
+
+
+@media(min-width:500px) {
+    .index-container {
+        display: grid;
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "frase                 frase"
+            "parrafosindex         parrafosindex";
+    }
+}
+
+@media(min-width:768px) {
+    .index-container {
+        display: grid;
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "frase                 frase                frase"
+            "parrafosindex         parrafosindex        parrafosindex";
+    }
+}
+
+@media(min-width:1024px) {
+    .index-container {
+        display: grid;
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "frase                frase"
+            "parrafosindex        parrafosindex";
+    }
 }

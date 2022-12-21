@@ -1,16 +1,94 @@
 /* TOUR */
 
-.espaciado {
-    margin-top: 60px;
+.fearless-tour {
+    grid-area: fearless;
 }
 
-.tour {
+.speaknow-tour {
+    grid-area: speaknow;
+}
+
+.red-tour {
+    grid-area: rojo;
+}
+
+.pop-tour {
+    grid-area: milnueve;
+}
+
+.reputation-tour {
+    grid-area: reputation;
+}
+
+.container-fluid {
+    grid-area: carrousel;
+}
+
+.tour-container {
+    display: grid;
+    margin-bottom: 1.5em;
+    gap: 20px;
+    grid-template-areas:
+        "fearless"
+        "speaknow"
+        "rojo"
+        "milnueve"
+        "reputation"
+        "carrousel";
+
     img {
-        width: 400px;
-        height: 550px;
+        width: 200px;
+        height: 150px;
     }
 }
 
-.carousel {
-    margin: 20px;
+@media(min-width:500px) {
+    .tour-container {
+        display: grid;
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "fearless    fearless"
+            "speaknow    speaknow"
+            "rojo        rojo"
+            "milnueve    milnueve"
+            "reputation  reputation"
+            "carrousel   carrousel";
+    }
+}
+
+@media (min-width:768px) {
+    .tour-container {
+        display: grid;
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "fearless    fearless    fearless"
+            "speaknow    speaknow    speaknow"
+            "rojo        rojo        rojo"
+            "milnueve    milnueve    milnueve"
+            "reputation  reputation  reputation"
+            "carrousel   carrousel   carrousel";
+    }
+}
+
+@media(min-width:1024px) {
+    .tour-container {
+        display: grid;
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "fearless    fearless"
+            "speaknow    speaknow"
+            "rojo        rojo"
+            "milnueve    milnueve"
+            "reputation  reputation"
+            "carrousel   carrousel";
+
+        img {
+            width: 520px;
+            height: 680px;
+            margin-top: 20px;
+        }
+    }
 }
