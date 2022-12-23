@@ -121,6 +121,10 @@
   gap: 15px;
   justify-items: center;
 }
+.grid-img a {
+  text-decoration: none;
+  color: black;
+}
 
 @media (min-width: 500px) {
   .grid-img {
@@ -324,5 +328,221 @@ footer {
     margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "fotopremio2021  premio2021" "fotopremio2020  premio2020" "fotopremio2019  premio2019";
+  }
+}
+.midnights-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.midnights-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: midnights-item;
+}
+.midnights-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones li {
+  list-style: none;
+}
+
+.midnights-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-midnights {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "midnights-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-midnights {
+    grid-template-columns: 1fr;
+    grid-template-areas: "midnights-item" "prologo" "canciones";
+  }
+  .midnights-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo img {
+    width: 500px;
+    height: 500px;
+  }
+  .midnights-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-midnights {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "midnights-item  midnights-item" "prologo         prologo" "canciones       canciones";
+  }
+  .midnights-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-midnights {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "midnights-item  midnights-item" "prologo         prologo" "canciones       canciones";
+  }
+  .midnights-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+.red-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.red-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: midnights-item;
+}
+.red-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-red {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-red img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-red {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-red li {
+  list-style: none;
+}
+
+.red-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-red {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "midnights-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-red {
+    grid-template-columns: 1fr;
+    grid-template-areas: "midnights-item" "prologo" "canciones";
+  }
+  .red-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo img {
+    width: 500px;
+    height: 500px;
+  }
+  .red-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-red {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "midnights-item  midnights-item" "prologo         prologo" "canciones       canciones";
+  }
+  .red-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-red {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "midnights-item  midnights-item" "prologo         prologo" "canciones       canciones";
+  }
+  .red-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
   }
 }/*# sourceMappingURL=estilos.css.map */
