@@ -76,7 +76,7 @@
         padding: 20px;
         grid-auto-flow: dense;
     }
-    .prologo{
+    .prologo-red{
         img{
             width: 500px;
             height: 500px;
@@ -123,5 +123,11 @@
         gap: 20px;
         padding: 20px;
         grid-auto-flow: dense;
+    }
+    .prologo-red{
+        img{
+            width: 500px;
+            height: 500px;
+        }
     }
 }
