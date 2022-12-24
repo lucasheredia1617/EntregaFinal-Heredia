@@ -549,4 +549,916 @@ footer {
     width: 500px;
     height: 500px;
   }
+}
+.fearless-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fearless-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.fearless-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: midnights-item;
+}
+.fearless-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-fearless {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-fearless img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-fearless {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-fearless li {
+  list-style: none;
+}
+
+.fearless-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-fearless {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "midnights-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-fearless {
+    grid-template-columns: 1fr;
+    grid-template-areas: "midnights-item" "prologo" "canciones";
+  }
+  .fearless-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-fearless img {
+    width: 500px;
+    height: 500px;
+  }
+  .fearless-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-fearless {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "midnights-item  midnights-item" "prologo         prologo" "canciones       canciones";
+  }
+  .fearless-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-fearless {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "midnights-item  midnights-item" "prologo         prologo" "canciones       canciones";
+  }
+  .fearless-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-fearless img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.evermore-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.evermore-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.evermore-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: evermore-item;
+}
+.evermore-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-evermore {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-evermore img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-evermore {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-evermore li {
+  list-style: none;
+}
+
+.evermore-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-evermore {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "evermore-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-evermore {
+    grid-template-columns: 1fr;
+    grid-template-areas: "evermore-item" "prologo" "canciones";
+  }
+  .evermore-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-evermore img {
+    width: 500px;
+    height: 500px;
+  }
+  .evermore-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-evermore {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "evermore-item  evermore-item" "prologo         prologo" "canciones       canciones";
+  }
+  .evermore-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-evermore {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "evermore-item  evermore-item" "prologo         prologo" "canciones       canciones";
+  }
+  .evermore-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-evermore img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.folklore-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.folklore-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.folklore-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: folklore-item;
+}
+.folklore-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-folklore {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-folklore img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-folklore {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-folklore li {
+  list-style: none;
+}
+
+.folklore-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-folklore {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "folklore-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-folklore {
+    grid-template-columns: 1fr;
+    grid-template-areas: "folklore-item" "prologo" "canciones";
+  }
+  .folklore-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-folklore img {
+    width: 500px;
+    height: 500px;
+  }
+  .folklore-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-folklore {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "folklore-item   folkore-item" "prologo         prologo" "canciones       canciones";
+  }
+  .folklore-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-folklore {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "folklore-item   folklore-item" "prologo         prologo" "canciones       canciones";
+  }
+  .folklore-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-folklore img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.lover-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lover-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.lover-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: lover-item;
+}
+.lover-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-lover {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-lover img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-lover {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-lover li {
+  list-style: none;
+}
+
+.lover-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-lover {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "lover-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-lover {
+    grid-template-columns: 1fr;
+    grid-template-areas: "lover-item" "prologo" "canciones";
+  }
+  .lover-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-lover img {
+    width: 500px;
+    height: 500px;
+  }
+  .lover-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-lover {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "lover-item      lover-item" "prologo         prologo" "canciones       canciones";
+  }
+  .lover-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-lover {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "lover-item      lover-item" "prologo         prologo" "canciones       canciones";
+  }
+  .lover-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-lover img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.reputation-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reputation-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.reputation-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: reputation-item;
+}
+.reputation-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-reputation {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-reputation img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-reputation {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-reputation li {
+  list-style: none;
+}
+
+.reputation-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-reputation {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "reputation-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-reputation {
+    grid-template-columns: 1fr;
+    grid-template-areas: "reputation-item" "prologo" "canciones";
+  }
+  .reputation-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-reputation img {
+    width: 500px;
+    height: 500px;
+  }
+  .reputation-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-reputation {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "reputation-item reputation-item" "prologo         prologo" "canciones       canciones";
+  }
+  .reputation-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-reputation {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "reputation-item      reputation-item" "prologo              prologo" "canciones            canciones";
+  }
+  .reputation-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-reputation img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.milnueve-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.milnueve-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.milnueve-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: milnueve-item;
+}
+.milnueve-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-milnueve {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-milnueve img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-milnueve {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-milnueve li {
+  list-style: none;
+}
+
+.milnueve-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-milnueve {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "milnueve-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-milnueve {
+    grid-template-columns: 1fr;
+    grid-template-areas: "milnueve-item" "prologo" "canciones";
+  }
+  .milnueve-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-milnueve img {
+    width: 500px;
+    height: 500px;
+  }
+  .milnueve-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-milnueve {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "milnueve-item   milnueve-item" "prologo         prologo" "canciones       canciones";
+  }
+  .milnueve-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-milnueve {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "milnueve-item        milnueve-item" "prologo              prologo" "canciones            canciones";
+  }
+  .milnueve-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-milnueve img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.speaknow-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.speaknow-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.speaknow-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: speaknow-item;
+}
+.speaknow-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-speaknow {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-speaknow img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-speaknow {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-speaknow li {
+  list-style: none;
+}
+
+.speaknow-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-speaknow {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "speaknow-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-speaknow {
+    grid-template-columns: 1fr;
+    grid-template-areas: "speaknow-item" "prologo" "canciones";
+  }
+  .speaknow-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-speaknow img {
+    width: 500px;
+    height: 500px;
+  }
+  .speaknow-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-speaknow {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "speaknow-item   speaknow-item" "prologo         prologo" "canciones       canciones";
+  }
+  .speaknow-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-speaknow {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "speaknow-item        speaknow-item" "prologo              prologo" "canciones            canciones";
+  }
+  .speaknow-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-speaknow img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.debut-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.debut-galeria img {
+  width: 250px;
+  height: 444px;
+}
+
+.debut-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2d9cb;
+  grid-area: debut-item;
+}
+.debut-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.prologo-debut {
+  grid-area: prologo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prologo-debut img {
+  width: 200px;
+  height: 200px;
+}
+
+.canciones-debut {
+  grid-area: canciones;
+  text-align: center;
+}
+.canciones-debut li {
+  list-style: none;
+}
+
+.debut-grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-debut {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "debut-item" "prologo" "canciones";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .grid-debut {
+    grid-template-columns: 1fr;
+    grid-template-areas: "debut-item" "prologo" "canciones";
+  }
+  .debut-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-debut img {
+    width: 500px;
+    height: 500px;
+  }
+  .debut-item img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-debut {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "debut-item   debut-item" "prologo      prologo" "canciones    canciones";
+  }
+  .debut-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-speaknow {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "debut-item        debut-item" "prologo           prologo" "canciones         canciones";
+  }
+  .debut-grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  .prologo-debut img {
+    width: 500px;
+    height: 500px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,133 @@
+.evermore-galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 250px;
+        height: 444px;
+    }
+}
+.evermore-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2d9cb;
+    grid-area: evermore-item;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.prologo-evermore{
+    grid-area: prologo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.canciones-evermore{
+    grid-area: canciones;
+    text-align: center;
+    li{
+        list-style: none;
+    }
+}
+
+.evermore-grid-galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.grid-evermore {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "evermore-item"
+        "prologo"
+        "canciones";
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+@media(min-width:500px) {
+    .grid-evermore {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "evermore-item"
+        "prologo"
+        "canciones";
+    }
+    .evermore-grid-galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+    }
+    .prologo-evermore{
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .evermore-item {
+        img{
+            width: 320px;
+            height: 320px;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .grid-evermore {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "evermore-item  evermore-item"
+        "prologo         prologo"
+        "canciones       canciones";
+    }
+    .evermore-grid-galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+    }
+}
+
+@media(min-width:1024px) {
+    .grid-evermore{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "evermore-item  evermore-item"
+        "prologo         prologo"
+        "canciones       canciones";
+    }
+    .evermore-grid-galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+    }
+    .prologo-evermore{
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+}

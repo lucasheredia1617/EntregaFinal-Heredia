@@ -1,0 +1,133 @@
+.milnueve-galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 250px;
+        height: 444px;
+    }
+}
+.milnueve-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2d9cb;
+    grid-area: milnueve-item;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.prologo-milnueve{
+    grid-area: prologo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.canciones-milnueve{
+    grid-area: canciones;
+    text-align: center;
+    li{
+        list-style: none;
+    }
+}
+
+.milnueve-grid-galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.grid-milnueve {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "milnueve-item"
+        "prologo"
+        "canciones";
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+@media(min-width:500px) {
+    .grid-milnueve {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "milnueve-item"
+        "prologo"
+        "canciones";
+    }
+    .milnueve-grid-galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+    }
+    .prologo-milnueve{
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .milnueve-item {
+        img{
+            width: 320px;
+            height: 320px;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .grid-milnueve {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "milnueve-item   milnueve-item"
+        "prologo         prologo"
+        "canciones       canciones";
+    }
+    .milnueve-grid-galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+    }
+}
+
+@media(min-width:1024px) {
+    .grid-milnueve{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "milnueve-item        milnueve-item"
+        "prologo              prologo"
+        "canciones            canciones";
+    }
+    .milnueve-grid-galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+    }
+    .prologo-milnueve{
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+}
