@@ -1,8 +1,16 @@
 /* INDEX */
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 
-.fotobackground {
-    padding: 30px;
-    border-radius: 5em;
+    img {
+        width: 200px;
+        height: 66px;
+        border: solid black 2px;
+    }
 }
 
 .containerfrase {
@@ -16,7 +24,6 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 2px solid black;
     padding: 10px;
 }
 
@@ -30,6 +37,7 @@
     margin-bottom: 1.5em;
     gap: 20px;
     grid-template-areas:
+        "header"
         "frase"
         "parrafosindex";
 }
@@ -41,8 +49,16 @@
         margin-bottom: 1.5em;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
+            "header                header"
             "frase                 frase"
             "parrafosindex         parrafosindex";
+    }
+
+    .header {
+        img {
+            width: 300px;
+            height: 100px;
+        }
     }
 }
 
@@ -52,8 +68,16 @@
         margin-bottom: 1.5em;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
+            "header                header               header"
             "frase                 frase                frase"
             "parrafosindex         parrafosindex        parrafosindex";
+    }
+
+    .header {
+        img {
+            width: 600px;
+            height: 200px;
+        }
     }
 }
 
@@ -63,7 +87,15 @@
         margin-bottom: 1.5em;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
+            "header               header"
             "frase                frase"
             "parrafosindex        parrafosindex";
+    }
+
+    .header {
+        img {
+            width: 700px;
+            height: 233px;
+        }
     }
 }

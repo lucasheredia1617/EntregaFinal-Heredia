@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     img{
-        width: 250px;
-        height: 444px;
+        width: 200px;
+        height: 375px;
     }
 }
 .fearless-item {
@@ -88,6 +88,12 @@
             height: 320px;
         }
     }
+    .fearless-galeria{
+        img{
+            width: 300px;
+            height: 475px;
+        }
+    }
 }
 
 @media(min-width:768px) {
@@ -123,11 +129,5 @@
         gap: 20px;
         padding: 20px;
         grid-auto-flow: dense;
-    }
-    .prologo-fearless{
-        img{
-            width: 500px;
-            height: 500px;
-        }
     }
 }

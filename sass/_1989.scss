@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     img{
-        width: 250px;
-        height: 444px;
+        width: 200px;
+        height: 200px;
     }
 }
 .milnueve-item {
@@ -88,6 +88,12 @@
             height: 320px;
         }
     }
+    .milnueve-galeria{
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
 }
 
 @media(min-width:768px) {
@@ -123,11 +129,5 @@
         gap: 20px;
         padding: 20px;
         grid-auto-flow: dense;
-    }
-    .prologo-milnueve{
-        img{
-            width: 500px;
-            height: 500px;
-        }
     }
 }

@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     img{
-        width: 250px;
-        height: 444px;
+        width: 200px;
+        height: 200px;
     }
 }
 .speaknow-item {
@@ -20,7 +20,7 @@
 }
 
 .prologo-speaknow{
-    grid-area: prologo;
+    grid-area: prologo-speaknow;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +52,7 @@
     grid-template-columns: 1fr;
     grid-template-areas: 
         "speaknow-item"
-        "prologo"
+        "prologo-speaknow"
         "canciones";
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
@@ -65,7 +65,7 @@
         grid-template-columns: 1fr;
         grid-template-areas: 
         "speaknow-item"
-        "prologo"
+        "prologo-speaknow"
         "canciones";
     }
     .speaknow-grid-galeria{
@@ -88,6 +88,12 @@
             height: 320px;
         }
     }
+    .speaknow-galeria{
+            img{
+                width: 300px;
+                height: 300px;
+            }
+    }
 }
 
 @media(min-width:768px) {
@@ -95,7 +101,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "speaknow-item   speaknow-item"
-        "prologo         prologo"
+        "prologo-speaknow prologo-speaknow"
         "canciones       canciones";
     }
     .speaknow-grid-galeria{
@@ -113,7 +119,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "speaknow-item        speaknow-item"
-        "prologo              prologo"
+        "prologo-speaknow     prologo-speaknow"
         "canciones            canciones";
     }
     .speaknow-grid-galeria{
@@ -126,8 +132,14 @@
     }
     .prologo-speaknow{
         img{
-            width: 500px;
-            height: 500px;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .speaknow-item{
+        img{
+            width: 300px;
+            height: 300px;
         }
     }
 }
