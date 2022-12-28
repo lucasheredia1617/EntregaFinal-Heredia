@@ -35,10 +35,49 @@
         "milnueve"
         "reputation"
         "carrousel";
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+}
 
+.size-tour {
     img {
         width: 200px;
-        height: 150px;
+        height: 200px;
+    }
+}
+
+.fearless-setlist {
+    img {
+        width: 200px;
+        height: 266px;
+    }
+}
+
+.speaknow-setlist {
+    img {
+        width: 200px;
+        height: 164px;
+    }
+}
+
+.red-setlist {
+    img {
+        width: 200px;
+        height: 258px;
+    }
+}
+
+.pop-setlist {
+    img {
+        width: 200px;
+        height: 221px;
+    }
+}
+
+.reputation-setlist {
+    img {
+        width: 200px;
+        height: 250px;
     }
 }
 
@@ -54,6 +93,50 @@
             "milnueve    milnueve"
             "reputation  reputation"
             "carrousel   carrousel";
+        grid-auto-rows: minmax(200px, auto);
+        gap: 10px;
+    }
+
+    .size-tour {
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    .fearless-setlist {
+        img {
+            width: 500px;
+            height: 600px;
+        }
+    }
+
+    .speaknow-setlist {
+        img {
+            width: 500px;
+            height: 411px;
+        }
+    }
+
+    .red-setlist {
+        img {
+            width: 500px;
+            height: 647px;
+        }
+    }
+
+    .pop-setlist {
+        img {
+            width: 500px;
+            height: 554px;
+        }
+    }
+
+    .reputation-setlist {
+        img {
+            width: 500px;
+            height: 625px;
+        }
     }
 }
 
@@ -69,6 +152,8 @@
             "milnueve    milnueve    milnueve"
             "reputation  reputation  reputation"
             "carrousel   carrousel   carrousel";
+        grid-auto-rows: minmax(200px, auto);
+        gap: 20px;
     }
 }
 
@@ -84,11 +169,7 @@
             "milnueve    milnueve"
             "reputation  reputation"
             "carrousel   carrousel";
-
-        img {
-            width: 520px;
-            height: 680px;
-            margin-top: 20px;
-        }
+        grid-auto-rows: minmax(200px, auto);
+        gap: 20px;
     }
 }

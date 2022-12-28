@@ -241,10 +241,38 @@
   margin-bottom: 1.5em;
   gap: 20px;
   grid-template-areas: "fearless" "speaknow" "rojo" "milnueve" "reputation" "carrousel";
+  grid-auto-rows: minmax(200px, auto);
+  gap: 10px;
 }
-.tour-container img {
+
+.size-tour img {
   width: 200px;
-  height: 150px;
+  height: 200px;
+}
+
+.fearless-setlist img {
+  width: 200px;
+  height: 266px;
+}
+
+.speaknow-setlist img {
+  width: 200px;
+  height: 164px;
+}
+
+.red-setlist img {
+  width: 200px;
+  height: 258px;
+}
+
+.pop-setlist img {
+  width: 200px;
+  height: 221px;
+}
+
+.reputation-setlist img {
+  width: 200px;
+  height: 250px;
 }
 
 @media (min-width: 500px) {
@@ -253,6 +281,32 @@
     margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "fearless    fearless" "speaknow    speaknow" "rojo        rojo" "milnueve    milnueve" "reputation  reputation" "carrousel   carrousel";
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+  }
+  .size-tour img {
+    width: 500px;
+    height: 500px;
+  }
+  .fearless-setlist img {
+    width: 500px;
+    height: 600px;
+  }
+  .speaknow-setlist img {
+    width: 500px;
+    height: 411px;
+  }
+  .red-setlist img {
+    width: 500px;
+    height: 647px;
+  }
+  .pop-setlist img {
+    width: 500px;
+    height: 554px;
+  }
+  .reputation-setlist img {
+    width: 500px;
+    height: 625px;
   }
 }
 @media (min-width: 768px) {
@@ -261,6 +315,8 @@
     margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "fearless    fearless    fearless" "speaknow    speaknow    speaknow" "rojo        rojo        rojo" "milnueve    milnueve    milnueve" "reputation  reputation  reputation" "carrousel   carrousel   carrousel";
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -269,11 +325,8 @@
     margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "fearless    fearless" "speaknow    speaknow" "rojo        rojo" "milnueve    milnueve" "reputation  reputation" "carrousel   carrousel";
-  }
-  .tour-container img {
-    width: 520px;
-    height: 680px;
-    margin-top: 20px;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
   }
 }
 /*mobile first 0px-500px*/
