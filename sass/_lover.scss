@@ -1,52 +1,64 @@
-.lover-galeria{
+.lover-galeria {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .lover-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e2d9cb;
     grid-area: lover-item;
-    img{
+
+    img {
         width: 200px;
         height: 200px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
     }
 }
 
-.prologo-lover{
+.prologo-lover {
     grid-area: prologo;
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         width: 200px;
         height: 200px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
     }
 }
 
-.canciones-lover{
+.canciones-lover {
     grid-area: canciones;
     text-align: center;
-    li{
+
+    li {
         list-style: none;
     }
 }
 
-.lover-grid-galeria{
+.lover-grid-galeria {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
+
+    img {
+        border-radius: 10px;
+        border: 2px solid #a39193;
+    }
 }
 
 .grid-lover {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "lover-item"
         "prologo"
         "canciones";
@@ -59,12 +71,13 @@
 @media(min-width:500px) {
     .grid-lover {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "lover-item"
-        "prologo"
-        "canciones";
+        grid-template-areas:
+            "lover-item"
+            "prologo"
+            "canciones";
     }
-    .lover-grid-galeria{
+
+    .lover-grid-galeria {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -72,14 +85,16 @@
         padding: 20px;
         grid-auto-flow: dense;
     }
-    .prologo-lover{
-        img{
+
+    .prologo-lover {
+        img {
             width: 500px;
             height: 500px;
         }
     }
+
     .lover-item {
-        img{
+        img {
             width: 320px;
             height: 320px;
         }
@@ -89,12 +104,13 @@
 @media(min-width:768px) {
     .grid-lover {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "lover-item      lover-item"
-        "prologo         prologo"
-        "canciones       canciones";
+        grid-template-areas:
+            "lover-item      lover-item"
+            "prologo         prologo"
+            "canciones       canciones";
     }
-    .lover-grid-galeria{
+
+    .lover-grid-galeria {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -105,14 +121,15 @@
 }
 
 @media(min-width:1024px) {
-    .grid-lover{
+    .grid-lover {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "lover-item      lover-item"
-        "prologo         prologo"
-        "canciones       canciones";
+        grid-template-areas:
+            "lover-item      lover-item"
+            "prologo         prologo"
+            "canciones       canciones";
     }
-    .lover-grid-galeria{
+
+    .lover-grid-galeria {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(200px, auto);

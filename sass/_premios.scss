@@ -1,61 +1,75 @@
 /*PREMIOS*/
-.premios2021 {
-    grid-area: premios2021;
-    border: solid 2px #ac9eb8;
+footer {
+    margin-top: 20px;
 }
 
-.premios2020 {
-    grid-area: premios2020;
-    border: solid 2px #ac9eb8;
-}
+.header-premio {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 
-.premios2019 {
-    grid-area: premios2019;
-    border: solid 2px #ac9eb8;
+    img {
+        border-radius: 10px;
+        width: 200px;
+        height: 66px;
+    }
 }
 
 .premios-container {
     display: grid;
-    margin-bottom: 1.5em;
     gap: 20px;
-    grid-template-areas:
-        "premios2021"
-        "premios2020"
-        "premios2019";
+    padding: 10px;
+
+    div {
+        border: solid 2px black;
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: #eae4da;
+
+        h3 {
+            text-align: center;
+        }
+    }
 }
 
 @media(min-width:500px) {
     .premios-container {
         display: grid;
-        margin-bottom: 1.5em;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "premios2021   premios2021"
-            "premios2020   premios2020"
-            "premios2019   premios2019";
+    }
+
+    .header-premio {
+        img {
+            width: 500px;
+            height: 166px;
+        }
     }
 }
 
 @media(min-width:768px) {
     .premios-container {
         display: grid;
-        margin-bottom: 1.5em;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "premios2021  premios2021  premios2021"
-            "premios2020  premios2020  premios2020"
-            "premios2019  premios2019  premios2019";
+    }
+
+    .header-premio {
+        img {
+            width: 700px;
+            height: 232px;
+        }
     }
 }
 
 @media(min-width:1024px) {
     .premios-contenedor {
         display: grid;
-        margin-bottom: 1.5em;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "fotopremio2021  premio2021"
-            "fotopremio2020  premio2020"
-            "fotopremio2019  premio2019";
+    }
+
+    .header-premio {
+        img {
+            width: 1024px;
+            height: auto;
+        }
     }
 }

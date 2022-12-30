@@ -10,6 +10,7 @@
   width: 200px;
   height: 66px;
   border: solid black 2px;
+  border-radius: 10px;
 }
 
 .containerfrase {
@@ -88,7 +89,7 @@
 }
 
 .bodycard, .card {
-  background-color: #e2d9cb;
+  background-color: #eae4da;
   font-family: "Lato", sans-serif;
 }
 
@@ -173,37 +174,42 @@
 /* GALERIA */
 /*comienzo a dar estilos mobile first 0-500*/
 .grid-item {
+  padding: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .grid-item:hover {
   filter: opacity(0.9);
-  transform: scale(1.04);
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(200px, auto);
-  gap: 20px;
-  padding: 20px;
-  grid-auto-flow: dense;
+}
+.grid-container img {
+  width: 200px;
+  height: auto;
 }
 
 @media (min-width: 500px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .grid-container img {
+    width: 400px;
+    height: auto;
   }
 }
 @media (min-width: 768px) {
-  .wide {
-    grid-column: span 2;
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
   }
-  .tall {
-    grid-row: span 2;
+  .grid-container img {
+    width: 300px;
+    height: auto;
   }
 }
 @media (min-width: 1024px) {
@@ -230,17 +236,14 @@
 
 .reputation-tour {
   grid-area: reputation;
-}
-
-.container-fluid {
-  grid-area: carrousel;
+  margin-bottom: 30px;
 }
 
 .tour-container {
   display: grid;
   margin-bottom: 1.5em;
   gap: 20px;
-  grid-template-areas: "fearless" "speaknow" "rojo" "milnueve" "reputation" "carrousel";
+  grid-template-areas: "fearless" "speaknow" "rojo" "milnueve" "reputation";
   grid-auto-rows: minmax(200px, auto);
   gap: 10px;
 }
@@ -248,31 +251,54 @@
 .size-tour img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
+}
+
+.cajita {
+  border: solid 2px black;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #eae4da;
+  padding: 5px;
+}
+.cajita h4 {
+  text-align: center;
 }
 
 .fearless-setlist img {
   width: 200px;
   height: 266px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .speaknow-setlist img {
   width: 200px;
   height: 164px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .red-setlist img {
   width: 200px;
   height: 258px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .pop-setlist img {
   width: 200px;
   height: 221px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .reputation-setlist img {
   width: 200px;
   height: 250px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 @media (min-width: 500px) {
@@ -280,7 +306,7 @@
     display: grid;
     margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "fearless    fearless" "speaknow    speaknow" "rojo        rojo" "milnueve    milnueve" "reputation  reputation" "carrousel   carrousel";
+    grid-template-areas: "fearless    fearless" "speaknow    speaknow" "rojo        rojo" "milnueve    milnueve" "reputation  reputation";
     grid-auto-rows: minmax(200px, auto);
     gap: 10px;
   }
@@ -314,7 +340,7 @@
     display: grid;
     margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "fearless    fearless    fearless" "speaknow    speaknow    speaknow" "rojo        rojo        rojo" "milnueve    milnueve    milnueve" "reputation  reputation  reputation" "carrousel   carrousel   carrousel";
+    grid-template-areas: "fearless    fearless    fearless" "speaknow    speaknow    speaknow" "rojo        rojo        rojo" "milnueve    milnueve    milnueve" "reputation  reputation  reputation";
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
   }
@@ -324,7 +350,7 @@
     display: grid;
     margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "fearless    fearless" "speaknow    speaknow" "rojo        rojo" "milnueve    milnueve" "reputation  reputation" "carrousel   carrousel";
+    grid-template-areas: "fearless    fearless" "speaknow    speaknow" "rojo        rojo" "milnueve    milnueve" "reputation  reputation";
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
   }
@@ -337,69 +363,83 @@
 }
 
 header {
-  background-color: #ac9eb8;
+  background-color: #a39193;
   text-align: center;
   padding: 15px;
 }
 
 body {
-  background-color: #e2d9cb;
+  background-color: #c7bdbe;
   font-family: "Lato", sans-serif;
 }
 
 footer {
-  background-color: #ac9eb8;
+  background-color: #a39193;
 }
 
 .bgnav {
-  background-color: #ac9eb8;
+  background-color: #a39193;
 }
 
 /*PREMIOS*/
-.premios2021 {
-  grid-area: premios2021;
-  border: solid 2px #ac9eb8;
+footer {
+  margin-top: 20px;
 }
 
-.premios2020 {
-  grid-area: premios2020;
-  border: solid 2px #ac9eb8;
+.header-premio {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-
-.premios2019 {
-  grid-area: premios2019;
-  border: solid 2px #ac9eb8;
+.header-premio img {
+  border-radius: 10px;
+  width: 200px;
+  height: 66px;
 }
 
 .premios-container {
   display: grid;
-  margin-bottom: 1.5em;
   gap: 20px;
-  grid-template-areas: "premios2021" "premios2020" "premios2019";
+  padding: 10px;
+}
+.premios-container div {
+  border: solid 2px black;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #eae4da;
+}
+.premios-container div h3 {
+  text-align: center;
 }
 
 @media (min-width: 500px) {
   .premios-container {
     display: grid;
-    margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "premios2021   premios2021" "premios2020   premios2020" "premios2019   premios2019";
+  }
+  .header-premio img {
+    width: 500px;
+    height: 166px;
   }
 }
 @media (min-width: 768px) {
   .premios-container {
     display: grid;
-    margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "premios2021  premios2021  premios2021" "premios2020  premios2020  premios2020" "premios2019  premios2019  premios2019";
+  }
+  .header-premio img {
+    width: 700px;
+    height: 232px;
   }
 }
 @media (min-width: 1024px) {
   .premios-contenedor {
     display: grid;
-    margin-bottom: 1.5em;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "fotopremio2021  premio2021" "fotopremio2020  premio2020" "fotopremio2019  premio2019";
+  }
+  .header-premio img {
+    width: 1024px;
+    height: auto;
   }
 }
 .midnights-galeria {
@@ -412,12 +452,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: midnights-item;
 }
 .midnights-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .prologo {
@@ -429,6 +470,8 @@ footer {
 .prologo img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones {
@@ -446,6 +489,10 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.midnights-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .grid-midnights {
@@ -522,12 +569,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: midnights-item;
 }
 .red-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .prologo-red {
@@ -539,6 +587,8 @@ footer {
 .prologo-red img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones-red {
@@ -556,6 +606,12 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.red-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
+  width: 200px;
+  height: auto;
 }
 
 .grid-red {
@@ -632,12 +688,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: midnights-item;
 }
 .fearless-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .prologo-fearless {
@@ -649,6 +706,8 @@ footer {
 .prologo-fearless img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones-fearless {
@@ -666,6 +725,10 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.fearless-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .grid-fearless {
@@ -742,12 +805,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: evermore-item;
 }
 .evermore-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .prologo-evermore {
@@ -759,6 +823,8 @@ footer {
 .prologo-evermore img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones-evermore {
@@ -776,6 +842,10 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.evermore-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .grid-evermore {
@@ -848,12 +918,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: folklore-item;
 }
 .folklore-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .prologo-folklore {
@@ -865,6 +936,8 @@ footer {
 .prologo-folklore img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones-folklore {
@@ -882,6 +955,10 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.folklore-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .grid-folklore {
@@ -954,12 +1031,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: lover-item;
 }
 .lover-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .prologo-lover {
@@ -971,6 +1049,8 @@ footer {
 .prologo-lover img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones-lover {
@@ -988,6 +1068,10 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.lover-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .grid-lover {
@@ -1064,12 +1148,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: reputation-item;
 }
 .reputation-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .prologo-reputation {
@@ -1081,6 +1166,8 @@ footer {
 .prologo-reputation img {
   width: 200px;
   height: 93px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones-reputation {
@@ -1098,6 +1185,12 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.reputation-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
+  width: 200px;
+  height: auto;
 }
 
 .grid-reputation {
@@ -1178,12 +1271,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: milnueve-item;
 }
 .milnueve-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .prologo-milnueve {
@@ -1195,6 +1289,8 @@ footer {
 .prologo-milnueve img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones-milnueve {
@@ -1212,6 +1308,10 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.milnueve-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .grid-milnueve {
@@ -1278,48 +1378,51 @@ footer {
     grid-auto-flow: dense;
   }
 }
-.speaknow-galeria {
+.speak-galeria {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.speaknow-galeria img {
+.speak-galeria img {
   width: 200px;
   height: 200px;
 }
 
-.speaknow-item {
+.speak-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
-  grid-area: speaknow-item;
+  grid-area: speak-item;
 }
-.speaknow-item img {
+.speak-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
-.prologo-speaknow {
-  grid-area: prologo-speaknow;
+.prologo-speak {
+  grid-area: prologo;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.prologo-speaknow img {
+.prologo-speak img {
   width: 200px;
-  height: 200px;
+  height: 93px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
-.canciones-speaknow {
+.canciones-speak {
   grid-area: canciones;
   text-align: center;
 }
-.canciones-speaknow li {
+.canciones-speak li {
   list-style: none;
 }
 
-.speaknow-grid-galeria {
+.speak-grid-galeria {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(200px, auto);
@@ -1327,11 +1430,15 @@ footer {
   padding: 20px;
   grid-auto-flow: dense;
 }
+.speak-grid-galeria img {
+  border-radius: 10px;
+  border: 2px solid #a39193;
+}
 
-.grid-speaknow {
+.grid-speak {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "speaknow-item" "prologo-speaknow" "canciones";
+  grid-template-areas: "speak-item" "prologo" "canciones";
   grid-auto-rows: minmax(200px, auto);
   gap: 20px;
   padding: 20px;
@@ -1339,11 +1446,11 @@ footer {
 }
 
 @media (min-width: 500px) {
-  .grid-speaknow {
+  .grid-speak {
     grid-template-columns: 1fr;
-    grid-template-areas: "speaknow-item" "prologo-speaknow" "canciones";
+    grid-template-areas: "speak-item" "prologo" "canciones";
   }
-  .speaknow-grid-galeria {
+  .speak-grid-galeria {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(200px, auto);
@@ -1351,25 +1458,25 @@ footer {
     padding: 20px;
     grid-auto-flow: dense;
   }
-  .prologo-speaknow img {
-    width: 500px;
-    height: 500px;
+  .prologo-speak img {
+    width: 300px;
+    height: 150px;
   }
-  .speaknow-item img {
+  .speak-item img {
     width: 320px;
     height: 320px;
   }
-  .speaknow-galeria img {
+  .speak-galeria img {
     width: 300px;
     height: 300px;
   }
 }
 @media (min-width: 768px) {
-  .grid-speaknow {
+  .grid-speak {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "speaknow-item   speaknow-item" "prologo-speaknow prologo-speaknow" "canciones       canciones";
+    grid-template-areas: "speak-item      speak-item" "prologo         prologo" "canciones       canciones";
   }
-  .speaknow-grid-galeria {
+  .speak-grid-galeria {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(200px, auto);
@@ -1377,27 +1484,23 @@ footer {
     padding: 20px;
     grid-auto-flow: dense;
   }
+  .prologo-speak img {
+    width: 400px;
+    height: 250px;
+  }
 }
 @media (min-width: 1024px) {
-  .grid-speaknow {
+  .grid-speak {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "speaknow-item        speaknow-item" "prologo-speaknow     prologo-speaknow" "canciones            canciones";
+    grid-template-areas: "speak-item           speak-item" "prologo              prologo" "canciones            canciones";
   }
-  .speaknow-grid-galeria {
+  .speak-grid-galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
-  }
-  .prologo-speaknow img {
-    width: 300px;
-    height: 300px;
-  }
-  .speaknow-item img {
-    width: 300px;
-    height: 300px;
   }
 }
 .debut-galeria {
@@ -1414,12 +1517,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2d9cb;
   grid-area: debut-item;
 }
 .debut-item img {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
+  border: 2px solid #a39193;
 }
 
 .canciones-debut {
@@ -1437,6 +1541,10 @@ footer {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+.debut-grid-galeria img {
+  border: 2px solid #a39193;
+  border-radius: 10px;
 }
 
 .grid-debut {

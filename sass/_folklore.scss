@@ -1,53 +1,65 @@
-.folklore-galeria{
+.folklore-galeria {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
+
 .folklore-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e2d9cb;
     grid-area: folklore-item;
-    img{
+
+    img {
         width: 200px;
         height: 200px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
     }
 }
 
-.prologo-folklore{
+.prologo-folklore {
     grid-area: prologo;
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         width: 200px;
         height: 200px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
     }
 }
 
-.canciones-folklore{
+.canciones-folklore {
     grid-area: canciones;
     text-align: center;
-    li{
+
+    li {
         list-style: none;
     }
 }
 
-.folklore-grid-galeria{
+.folklore-grid-galeria {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
+
+    img {
+        border-radius: 10px;
+        border: 2px solid #a39193;
+    }
 }
 
 .grid-folklore {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "folklore-item"
         "prologo"
         "canciones";
@@ -60,12 +72,13 @@
 @media(min-width:500px) {
     .grid-folklore {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "folklore-item"
-        "prologo"
-        "canciones";
+        grid-template-areas:
+            "folklore-item"
+            "prologo"
+            "canciones";
     }
-    .folklore-grid-galeria{
+
+    .folklore-grid-galeria {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -73,14 +86,16 @@
         padding: 20px;
         grid-auto-flow: dense;
     }
-    .prologo-folklore{
-        img{
+
+    .prologo-folklore {
+        img {
             width: 500px;
             height: 500px;
         }
     }
+
     .folklore-item {
-        img{
+        img {
             width: 320px;
             height: 320px;
         }
@@ -90,12 +105,13 @@
 @media(min-width:768px) {
     .grid-folklore {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "folklore-item   folkore-item"
-        "prologo         prologo"
-        "canciones       canciones";
+        grid-template-areas:
+            "folklore-item   folkore-item"
+            "prologo         prologo"
+            "canciones       canciones";
     }
-    .folklore-grid-galeria{
+
+    .folklore-grid-galeria {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -106,14 +122,15 @@
 }
 
 @media(min-width:1024px) {
-    .grid-folklore{
+    .grid-folklore {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "folklore-item   folklore-item"
-        "prologo         prologo"
-        "canciones       canciones";
+        grid-template-areas:
+            "folklore-item   folklore-item"
+            "prologo         prologo"
+            "canciones       canciones";
     }
-    .folklore-grid-galeria{
+
+    .folklore-grid-galeria {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(200px, auto);

@@ -12,7 +12,7 @@
 }
 
 .bodycard {
-    background-color: $colorbody;
+    background-color: #eae4da;
     font-family: 'Lato', sans-serif;
 }
 
@@ -77,8 +77,9 @@
     grid-row: 1fr;
     gap: 15px;
     justify-items: center;
-    a{
-        text-decoration:none;
+
+    a {
+        text-decoration: none;
         color: black;
     }
 }

@@ -1,57 +1,72 @@
-.reputation-galeria{
+.reputation-galeria {
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         width: 250px;
         height: 444px;
     }
 }
+
 .reputation-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e2d9cb;
     grid-area: reputation-item;
-    img{
+
+    img {
         width: 200px;
         height: 200px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
     }
 }
 
-.prologo-reputation{
+.prologo-reputation {
     grid-area: prologo;
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         width: 200px;
         height: 93px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
     }
-    
+
 }
 
-.canciones-reputation{
+.canciones-reputation {
     grid-area: canciones;
     text-align: center;
-    li{
+
+    li {
         list-style: none;
     }
 }
 
-.reputation-grid-galeria{
+.reputation-grid-galeria {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
+
+    img {
+        border-radius: 10px;
+        border: 2px solid #a39193;
+        width: 200px;
+        height: auto;
+    }
 }
 
 .grid-reputation {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "reputation-item"
         "prologo"
         "canciones";
@@ -64,12 +79,13 @@
 @media(min-width:500px) {
     .grid-reputation {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "reputation-item"
-        "prologo"
-        "canciones";
+        grid-template-areas:
+            "reputation-item"
+            "prologo"
+            "canciones";
     }
-    .reputation-grid-galeria{
+
+    .reputation-grid-galeria {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -77,14 +93,16 @@
         padding: 20px;
         grid-auto-flow: dense;
     }
-    .prologo-reputation{
-        img{
+
+    .prologo-reputation {
+        img {
             width: 300px;
             height: 150px;
         }
     }
+
     .reputation-item {
-        img{
+        img {
             width: 320px;
             height: 320px;
         }
@@ -94,12 +112,13 @@
 @media(min-width:768px) {
     .grid-reputation {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "reputation-item reputation-item"
-        "prologo         prologo"
-        "canciones       canciones";
+        grid-template-areas:
+            "reputation-item reputation-item"
+            "prologo         prologo"
+            "canciones       canciones";
     }
-    .reputation-grid-galeria{
+
+    .reputation-grid-galeria {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -110,14 +129,15 @@
 }
 
 @media(min-width:1024px) {
-    .grid-reputation{
+    .grid-reputation {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "reputation-item      reputation-item"
-        "prologo              prologo"
-        "canciones            canciones";
+        grid-template-areas:
+            "reputation-item      reputation-item"
+            "prologo              prologo"
+            "canciones            canciones";
     }
-    .reputation-grid-galeria{
+
+    .reputation-grid-galeria {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -125,8 +145,9 @@
         padding: 20px;
         grid-auto-flow: dense;
     }
-    .prologo-reputation{
-        img{
+
+    .prologo-reputation {
+        img {
             width: 400px;
             height: 250px;
         }

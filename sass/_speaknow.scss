@@ -1,58 +1,72 @@
-.speaknow-galeria{
+.speak-galeria {
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
-        width: 200px;
-        height: 200px;
-    }
-}
-.speaknow-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e2d9cb;
-    grid-area: speaknow-item;
-    img{
+
+    img {
         width: 200px;
         height: 200px;
     }
 }
 
-.prologo-speaknow{
-    grid-area: prologo-speaknow;
+.speak-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+    grid-area: speak-item;
+
+    img {
         width: 200px;
         height: 200px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
     }
 }
 
-.canciones-speaknow{
+.prologo-speak {
+    grid-area: prologo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 200px;
+        height: 93px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
+    }
+
+}
+
+.canciones-speak {
     grid-area: canciones;
     text-align: center;
-    li{
+
+    li {
         list-style: none;
     }
 }
 
-.speaknow-grid-galeria{
+.speak-grid-galeria {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
+
+    img {
+        border-radius: 10px;
+        border: 2px solid #a39193;
+    }
 }
 
-.grid-speaknow {
+.grid-speak {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-        "speaknow-item"
-        "prologo-speaknow"
+    grid-template-areas:
+        "speak-item"
+        "prologo"
         "canciones";
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
@@ -61,14 +75,15 @@
 }
 
 @media(min-width:500px) {
-    .grid-speaknow {
+    .grid-speak {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "speaknow-item"
-        "prologo-speaknow"
-        "canciones";
+        grid-template-areas:
+            "speak-item"
+            "prologo"
+            "canciones";
     }
-    .speaknow-grid-galeria{
+
+    .speak-grid-galeria {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -76,35 +91,39 @@
         padding: 20px;
         grid-auto-flow: dense;
     }
-    .prologo-speaknow{
-        img{
-            width: 500px;
-            height: 500px;
+
+    .prologo-speak {
+        img {
+            width: 300px;
+            height: 150px;
         }
     }
-    .speaknow-item {
-        img{
+
+    .speak-item {
+        img {
             width: 320px;
             height: 320px;
         }
     }
-    .speaknow-galeria{
-            img{
-                width: 300px;
-                height: 300px;
-            }
+
+    .speak-galeria {
+        img {
+            width: 300px;
+            height: 300px;
+        }
     }
 }
 
 @media(min-width:768px) {
-    .grid-speaknow {
+    .grid-speak {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "speaknow-item   speaknow-item"
-        "prologo-speaknow prologo-speaknow"
-        "canciones       canciones";
+        grid-template-areas:
+            "speak-item      speak-item"
+            "prologo         prologo"
+            "canciones       canciones";
     }
-    .speaknow-grid-galeria{
+
+    .speak-grid-galeria {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(200px, auto);
@@ -112,34 +131,30 @@
         padding: 20px;
         grid-auto-flow: dense;
     }
+
+    .prologo-speak {
+        img {
+            width: 400px;
+            height: 250px;
+        }
+    }
 }
 
 @media(min-width:1024px) {
-    .grid-speaknow{
+    .grid-speak {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "speaknow-item        speaknow-item"
-        "prologo-speaknow     prologo-speaknow"
-        "canciones            canciones";
+        grid-template-areas:
+            "speak-item           speak-item"
+            "prologo              prologo"
+            "canciones            canciones";
     }
-    .speaknow-grid-galeria{
+
+    .speak-grid-galeria {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(200px, auto);
         gap: 20px;
         padding: 20px;
         grid-auto-flow: dense;
-    }
-    .prologo-speaknow{
-        img{
-            width: 300px;
-            height: 300px;
-        }
-    }
-    .speaknow-item{
-        img{
-            width: 300px;
-            height: 300px;
-        }
     }
 }

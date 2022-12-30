@@ -13,12 +13,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e2d9cb;
     grid-area: debut-item;
 
     img {
         width: 200px;
         height: 200px;
+        border-radius: 10px;
+        border: 2px solid #a39193;
     }
 }
 
@@ -38,6 +39,11 @@
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
+
+    img {
+        border: 2px solid #a39193;
+        border-radius: 10px;
+    }
 }
 
 .grid-debut {
